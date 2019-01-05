@@ -1,0 +1,39 @@
+* 차주 공지
+12/15(토) - 건물정전 관계로 10시 ~ 3시 수업
+
+* 자바/이클립스는 다 지워져있고..점심은 나가서 먹었음. 출석은 사전메일 말씀드렸는데 X체크됨;
+
+* 수업 전
+1) java, eclipse 다운로드
+www.oracle.co.kr
+www.eclipse.org
+2) C:\ 하위에 본인폴더 생성
+3) eclipse 구동 시 workspace를 C:\본인폴더로 설정
+4) eclipse 인코딩 설정
+File > Properties > Resource > 하단 Text file encoding > Other > UTF-8로 변경
+5) 불러오기
+USB폴더를 C:\본인폴더 하위에 복사 후
+eclipse 좌측 project explorer 우클릭 > Import > Import 클릭,
+General > Projects from Folder or Achive > Next버튼
+우측 상단 Directory > C:\본인폴더\복사폴더 > 폴더선택 버튼
+
+* 단축키
+코드 줄 자동정리 : ctrl + shift + f
+한줄 복사 : ctrl + alt + 위or아래 화살표
+
+* 내용
+1) 연산자
+- 사칙연산
+ +(더하기) -(빼기) *(곱하기) /(나누기) %(나머지)
+- 비교연산 
+ ==(같음) !=(다름) >(큼) >=(크거나같음)
+- 논리연산 
+ &&(and) ||(or)
+
+2) 제어문
+- 기본원칙은 순서대로
+- 조건문(분기)
+if, if else, switch
+- 반복문
+for, while
+
