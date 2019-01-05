@@ -26,6 +26,8 @@ public class Pizza {
 	int comboPrice = 20000;
 	int gamzaPrice = 18000;
 	int gogiPrice = 19000;
+	private JLabel lblAll;
+	private JButton btnNewButton;
 	
 	
 	
@@ -35,29 +37,47 @@ public class Pizza {
 		f = new JFrame();
 		top = new JLabel("############### 자바피자에 오신 것을 환영합니다. ###############");
 		count = new JLabel("갯수");
-		price = new JLabel("            가격");
+		price = new JLabel("\uAC00\uACA9");
 		combo = new JButton("콤보 피자");
 		gamza = new JButton("포테이트 피자");
 		gogi = new JButton("불고기 피자");
-		num = new JTextField(20);
-		total = new JTextField(20);
+		num = new JTextField(25);
+		total = new JTextField(25);
 		list = new JTextField(25);
 
 		FlowLayout flow = new FlowLayout();
-		f.setLayout(flow);
+		f.getContentPane().setLayout(flow);
 
-		f.add(top);
-		f.add(combo);
-		f.add(gamza);
-		f.add(gogi);
-		f.add(count);
-		f.add(num);
-		f.add(price);
-		f.add(total);
-		f.add(list);
+		f.getContentPane().add(top);
+		f.getContentPane().add(combo);
+		f.getContentPane().add(gamza);
+		f.getContentPane().add(gogi);
+		f.getContentPane().add(count);
+		f.getContentPane().add(num);
+		f.getContentPane().add(price);
+		f.getContentPane().add(total);
+		
+		lblAll = new JLabel("\uCD1D\uACC4");
+		f.getContentPane().add(lblAll);
+		f.getContentPane().add(list);
 
 		list.setForeground(Color.WHITE);
 		list.setBackground(Color.DARK_GRAY);
+		
+		btnNewButton = new JButton("\uCD08\uAE30\uD654");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				sum = 0;
+				priceSum =0;
+				num.setText(sum+"");
+				total.setText((priceSum)+"");
+				list.setText("");
+				
+			}
+		});
+		btnNewButton.setBackground(Color.BLACK);
+		btnNewButton.setForeground(Color.WHITE);
+		f.getContentPane().add(btnNewButton);
 
 		combo.addActionListener(new ActionListener() {
 
